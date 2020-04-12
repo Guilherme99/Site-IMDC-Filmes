@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+}
+header{
+	background-image: url('files/capa-madmax2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 90vh;	
+	padding: 20px;
+}
+#iconpagina{
+	margin-left: 12.5%;
+}
+#iconpagina img{
+	width: 100%;
+	
+}
+.menu{
+	display: flex;
+	width: 100%;
+	margin:0;
+	z-index: 2;
+}
+.links{
+	display: flex;
+	color: white;
+	justify-content: center;
+	margin: auto;
+
+}
+ul{
+	display: flex;
+}
+ul li{
+	list-style: none;
+	text-transform: uppercase;
+}
+ul li a{
+	margin: 0 25px;
+	color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+ul li a:hover{
+	color:#e4bb23;
+	text-decoration: none;
+} 
+.topicos > .genero > a:hover{
+	color:#e4bb23;
+
+}
+#perfil{
+	rgba(0, 0, 0, 0.5);
+    height: 50px;
+    margin-right: 14%;
+    padding: 5px;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+#perfil .imgperfil img{
+	width: 45px;
+	border-radius: 100%;
+	margin-right:10px;
+}
+#perfil .nome{
+	color: white;
+	font-weight: bold;
+}
+.conteudo{
+	position: relative;
+	width: 100%;
+	margin:0 auto;
+	height: 100%;
+	padding: 0;
+	z-index: 2;
+}
+.principal{
+	position: relative;
+	width: 75%;
+	margin:0 auto;
+	z-index: 2;
+}
+.titulo{
+	position: relative;
+	margin-top: 12%;
+}
+.titulo h1{
+	position: relative;
+	color: #fff;
+	font-size: 4.7em;
+	line-height: 1.2em;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+}
+.topicos{
+	position: relative;
+	display: flex;
+}
+.topicos > .genero > a{
+	color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;	
+}
+.genero{
+	position: relative;
+	margin-right: 2%;
+	color: white;
+	padding: 5px;
+}
+.clicktrailer{
+	position: relative;
+	display: inline-flex;
+	width: 30%;
+	margin-top: 3%;
+}
+.clicktrailer > a{
+	position: relative;
+	text-decoration: none;
+	background-color: #e4bb23;
+	padding: 15px 50px;
+	border-radius: 40px;
+	color: #000;
+
+}
+.clicktrailer > a:hover{
+	text-decoration: none;
+	color: #000;
+	opacity: 0.8;
+}
+.clicktrailer > a:hover .clicktrailer{
+	opacity: 0.2;
+}
+.clicktrailer > a > i{	
+	font-size: 25px;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+.informacoestrailer{
+	position: relative;
+	width: 30%;
+	margin-top: 2%;	
+}
+.informacoestrailer > p{
+	position: relative;
+	margin:3%;
+	display: table;
+	color: white;
+}
+#data_filme{
+	color: #F8BB16;
+}
+
+section{
+	display: flex;
+	width: 100%;
+	margin-bottom: 2%;
+	background-color:  #f2f2f2;
+}
+.catalogo{
+	width: 80%;
+	margin:0 auto;
+	position: relative;
+}
+.opcoes{
+	margin: 0;
+	padding: 0;
+}
+.opcoes > ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+.opcoes > ul > li {
+	padding: 2%;
+	margin: 0;
+	border-bottom: 1px solid #dfdfdf;
+	text-align: center;
+	justify-content: center;
+}
+.opcoes > ul > li:hover{
+	position: relative;
+	border-bottom: 0.5px solid #F8BB16;
+}
+.opcoes > ul > li > a{
+	margin: 0;
+	text-decoration: none;
+	color: #F8BB16;
+	text-transform: uppercase;
+}
+.filmes{
+	padding: 1%;
+	margin:1% 4%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.filme{
+	position: relative;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	width: 230px;
+	height: 450px;
+	margin: 0.5%;
+}
+.filme > .img{
+	position: relative;
+	width: 100%;
+	height: 340px;
+}
+.filme > .img > img {
+	width: 100%;
+	height: 100%;	
+}
+.startfilme{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	padding:2px; 	
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: 0.2s;
+	visibility: hidden;
+	z-index: 1;
+
+}
+.startfilme > h4{
+	color: #F8BB16;
+	text-transform:uppercase;
+}
+.startfilme > i {
+	color: #fff;
+}
+.startfilme > i:hover{
+	cursor: pointer;
+	color: #F8BB16;
+}
+.filme:hover .startfilme{
+	opacity: 1;
+	visibility: visible;
+}
+.sinopse{
+	padding: 10px;
+}
+h5{
+	text-transform: uppercase;
+	font-size: 10px;
+}
+h6 > a{
+	color: #F8BB16;
+	text-decoration: none;
+}
+h6 > a:hover{
+	color: #F8BB16;
+}
+.classificacao{
+	display: flex;
+	align-items: center;
+}
+.classificacao > p.nota{
+	color: #000;
+	margin: 0;
+	font-size: 22px;
+	font-weight: bold;
+	justify-content: space-between;
+}
+.icon-heart{
+	float: left;
+	margin-right: 80%;
+}
+.icon-heart:hover{
+	color: red;
+	cursor: pointer;
+}
+footer{
+	margin:0;
+	display: flex;
+	align-items: center;
+	background-color:  white;
+}
+#iconpagina2{
+	margin-left: 12.5%;
+	background-color:  white;
+}
+#iconpagina2 img{
+	width: 10%;
+	margin-bottom: 1%;
+}
+.redesociaisoficiais{
+	background-color:  white;
+	margin:0;
+	display: flex;
+	float: right;
+	margin-right:23%;
+	align-items:  center; 
+	justify-content:  center; 
+}
+.redesociais{
+	display: flex;
+	float: right;
+	align-items:  center; 
+	justify-content:  center; 	
+	margin-left: 60%;
+}
+.redesociais > i{
+	color:#D9D9D9;
+}
+i.icon-twitter:hover{
+	color:#02b2f2;
+}
+i.icon-facebook-sign:hover{
+	color:#404b97;
+}
+i.icon-instagram:hover{
+	color:#ec0176;
+}
